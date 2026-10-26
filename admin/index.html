@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin | Ideal English School</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="login" hidden>
+  <form id="lf">
+    <h1>School admin</h1>
+    <p>Sign in with the account created for the school office.</p>
+    <label>Email<input id="em" type="email" required autocomplete="username"></label>
+    <label>Password<input id="pw" type="password" required autocomplete="current-password"></label>
+    <button class="pri">Sign in</button>
+    <p id="le" role="alert"></p>
+  </form>
+</div>
+<div id="app" hidden>
+  <aside>
+    <div class="brandrow"><strong class="brand">Ideal English School</strong><button id="mtoggle" aria-expanded="false" aria-controls="nav">Menu</button></div>
+    <nav id="nav" aria-label="Admin sections"></nav>
+    <a class="btn" href="../" target="_blank" rel="noopener">Open the website</a>
+    <button id="out">Sign out</button>
+  </aside>
+  <main id="main"></main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
