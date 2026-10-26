@@ -114,8 +114,14 @@ section{scroll-margin-top:90px}
 
 /* review marks */
 .nc{}
-body.review .nc{border-bottom:1.5px dotted var(--red-ink)}
-body.review .nc::after{content:" \25C6";color:var(--red-ink);font-size:.7em}
+body.review .nc{
+  border-bottom: none !important;
+}
+
+body.review .nc::after{
+  content: none !important;
+  display: none !important;
+}
 .ro{display:none}
 body.review .ro{display:block}
 
